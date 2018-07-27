@@ -43,7 +43,7 @@ class EarthNode: SCNNode {
         
         let action = SCNAction.rotateBy(x: 0, y: 1, z: 0, duration: 8)
         let repeatAction = SCNAction.repeatForever(action)
-        //self.runAction(repeatAction)
+        self.runAction(repeatAction)
         
         let moveLeft = SCNAction.moveBy(x: 0.18, y: 0, z: 0, duration: 1)
         moveLeft.timingMode = .easeInEaseOut;
