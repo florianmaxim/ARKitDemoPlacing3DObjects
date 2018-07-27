@@ -16,6 +16,7 @@
 		1762A412210B1B4B0073BC84 /* AugemntedRealWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762A411210B1B4B0073BC84 /* AugemntedRealWorldTests.swift */; };
 		1762A41D210B1B4B0073BC84 /* AugemntedRealWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762A41C210B1B4B0073BC84 /* AugemntedRealWorldUITests.swift */; };
 		1762A42B210B1BCB0073BC84 /* EarthNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762A42A210B1BCB0073BC84 /* EarthNode.swift */; };
+		1762A42F210B8AC40073BC84 /* Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762A42E210B8AC40073BC84 /* Orange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1762A41C210B1B4B0073BC84 /* AugemntedRealWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugemntedRealWorldUITests.swift; sourceTree = "<group>"; };
 		1762A41E210B1B4B0073BC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1762A42A210B1BCB0073BC84 /* EarthNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthNode.swift; sourceTree = "<group>"; };
+		1762A42E210B8AC40073BC84 /* Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1762A3FE210B1B470073BC84 /* ViewController.swift */,
 				1762A400210B1B470073BC84 /* Main.storyboard */,
 				1762A42A210B1BCB0073BC84 /* EarthNode.swift */,
+				1762A42E210B8AC40073BC84 /* Orange.swift */,
 				1762A403210B1B4B0073BC84 /* Assets.xcassets */,
 				1762A405210B1B4B0073BC84 /* LaunchScreen.storyboard */,
 				1762A408210B1B4B0073BC84 /* Info.plist */,
@@ -266,6 +269,7 @@
 				1762A3FF210B1B470073BC84 /* ViewController.swift in Sources */,
 				1762A42B210B1BCB0073BC84 /* EarthNode.swift in Sources */,
 				1762A3FB210B1B470073BC84 /* AppDelegate.swift in Sources */,
+				1762A42F210B8AC40073BC84 /* Orange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

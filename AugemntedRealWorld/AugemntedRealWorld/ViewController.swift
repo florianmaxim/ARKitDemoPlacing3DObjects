@@ -27,12 +27,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
-        
+        sceneView.showsStatistics = false
         sceneView.automaticallyUpdatesLighting = false
         
         // Create a new scene
         let scene = SCNScene()
+        
+        // Setup Image Based Lighting (IBL) map
+        let env = UIImage(named: "art.scnassets/sphericalStreet.jpg")
+        scene.lightingEnvironment.contents = env
+        scene.lightingEnvironment.intensity = 2.0
+        
+        let background = UIImage(named: "art.scnassets/sphericalBlurred.jpg")
+        scene.background.contents = background;
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -42,11 +49,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let lightNode = SCNNode()
             lightNode.light = sceneLight
-            lightNode.position = SCNVector3(x:0,y:10,z:2)
+            lightNode.position = SCNVector3(x:-5,y:10,z:2)
         
         sceneView.scene.rootNode.addChildNode(lightNode)
         
+        let lightNode2 = SCNNode()
+        lightNode2.light = sceneLight
+        lightNode2.position = SCNVector3(x:5,y:10,z:-2)
         
+        sceneView.scene.rootNode.addChildNode(lightNode2)
+        
+       
       
     }
     
@@ -58,7 +71,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
             configuration.planeDetection = .horizontal
             configuration.isLightEstimationEnabled = true
-
+        
+            // Enable automatic environment texturing (This is just AWESOME)
+            //ARKit 2 required :(
+            //configuration.EnvironmentTexturing = true
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -75,10 +92,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let touch = touches.first
         let location = touch?.location(in: sceneView)
         
-        /* Only on detected planes
-        addNodeAtLocation(location: location!)
-        */
         
+        //Only on detected planes
+        //addNodeAtLocation(location: location!)
         
         //Somewhere in space
         let hitResults = sceneView.hitTest(location! , types: .featurePoint)
@@ -89,8 +105,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let newEarth = EarthNode()
             newEarth.position = position
-            
-            sceneView.scene.rootNode.addChildNode(newEarth)
+        sceneView.scene.rootNode.addChildNode(newEarth)
+
         }
         
     }
@@ -107,7 +123,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         if let planeAnchor = anchor as? ARPlaneAnchor {
             node = SCNNode()
             planeGeometry = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
-            planeGeometry.firstMaterial?.diffuse.contents = UIColor.white.withAlphaComponent(0.5)
+            planeGeometry.firstMaterial?.diffuse.contents = UIColor.white.withAlphaComponent(0)
             //planeGeometry.firstMaterial?.fillMode = .lines
             
             let planeNode = SCNNode(geometry: planeGeometry)
@@ -115,8 +131,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             planeNode.transform = SCNMatrix4MakeRotation(-Float.pi / 2, 1, 0, 0)
             
             updateMaterial()
-            
-            
             
             node?.addChildNode(planeNode)
             anchors.append(planeAnchor)
@@ -159,7 +173,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let newLocation = SCNVector3(x: result.worldTransform.columns.3.x, y: result.worldTransform.columns.3.y + 0.5, z: result.worldTransform.columns.3.z)
             let earthNode = EarthNode()
             earthNode.position = newLocation
-            
             sceneView.scene.rootNode.addChildNode(earthNode)
         }
         
