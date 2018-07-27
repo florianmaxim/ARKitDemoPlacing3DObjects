@@ -53,6 +53,7 @@
 		1762A41E210B1B4B0073BC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1762A42A210B1BCB0073BC84 /* EarthNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthNode.swift; sourceTree = "<group>"; };
 		1762A42E210B8AC40073BC84 /* Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orange.swift; sourceTree = "<group>"; };
+		1762A430210BD67D0073BC84 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		1762A3EE210B1B470073BC84 = {
 			isa = PBXGroup;
 			children = (
+				1762A430210BD67D0073BC84 /* README.md */,
 				1762A3F9210B1B470073BC84 /* AugemntedRealWorld */,
 				1762A410210B1B4B0073BC84 /* AugemntedRealWorldTests */,
 				1762A41B210B1B4B0073BC84 /* AugemntedRealWorldUITests */,
