@@ -75,10 +75,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let touch = touches.first
         let location = touch?.location(in: sceneView)
         
+        /* Only on detected planes
         addNodeAtLocation(location: location!)
+        */
         
-        /* Somewhere in space
         
+        //Somewhere in space
         let hitResults = sceneView.hitTest(location! , types: .featurePoint)
         
         if let hitTestResult = hitResults.first {
@@ -90,7 +92,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             sceneView.scene.rootNode.addChildNode(newEarth)
         }
-        */
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -106,12 +108,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             node = SCNNode()
             planeGeometry = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
             planeGeometry.firstMaterial?.diffuse.contents = UIColor.white.withAlphaComponent(0.5)
+            //planeGeometry.firstMaterial?.fillMode = .lines
             
             let planeNode = SCNNode(geometry: planeGeometry)
             planeNode.position = SCNVector3(x: planeAnchor.center.x, y:0, z: planeAnchor.center.z)
             planeNode.transform = SCNMatrix4MakeRotation(-Float.pi / 2, 1, 0, 0)
             
             updateMaterial()
+            
+            
             
             node?.addChildNode(planeNode)
             anchors.append(planeAnchor)
@@ -128,9 +133,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                     planeNode.position = SCNVector3(x: planeAnchor.center.x, y: 0, z: planeAnchor.center.z)
                     
                     if let plane = planeNode.geometry as? SCNPlane {
+                        
                         plane.width = CGFloat(planeAnchor.extent.x)
                         plane.height = CGFloat(planeAnchor.extent.z)
+                        
                         updateMaterial()
+                        
+                        //Extend the physical body as well
+                        planeNode.physicsBody = SCNPhysicsBody(
+                            type: .kinematic,
+                            shape: SCNPhysicsShape(geometry: planeGeometry, options: nil));
                     }
                 }
             }
@@ -144,7 +156,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         if hitResults.count > 0 {
             let result = hitResults.first!
-            let newLocation = SCNVector3(x: result.worldTransform.columns.3.x, y: result.worldTransform.columns.3.y + 0.15, z: result.worldTransform.columns.3.z)
+            let newLocation = SCNVector3(x: result.worldTransform.columns.3.x, y: result.worldTransform.columns.3.y + 0.5, z: result.worldTransform.columns.3.z)
             let earthNode = EarthNode()
             earthNode.position = newLocation
             

@@ -20,11 +20,15 @@ class EarthNode: SCNNode {
         self.geometry?.firstMaterial?.emission.contents = UIImage(named:"Emission")
         self.geometry?.firstMaterial?.normal.contents = UIImage(named:"Normal")
         
+        self.physicsBody = SCNPhysicsBody(
+            type: .dynamic,
+            shape: nil);
+        
         let action = SCNAction.rotateBy(x: 0, y: 1, z: 0, duration: 8)
         
         let repeatAction = SCNAction.repeatForever(action)
         
-        self.runAction(repeatAction)
+        //self.runAction(repeatAction)
     }
     
     required init?(coder aDecoder: NSCoder) {
