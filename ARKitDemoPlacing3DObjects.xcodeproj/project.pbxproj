@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170EB8AF210F5BCD001E175E /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 170EB8AE210F5BCD001E175E /* screen.png */; };
+		170EB8B1210F5C43001E175E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 170EB8B0210F5C43001E175E /* Default-568h@2x.png */; };
 		1762A3FB210B1B470073BC84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762A3FA210B1B470073BC84 /* AppDelegate.swift */; };
 		1762A3FD210B1B470073BC84 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1762A3FC210B1B470073BC84 /* art.scnassets */; };
 		1762A3FF210B1B470073BC84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762A3FE210B1B470073BC84 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170EB8AE210F5BCD001E175E /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen.png; sourceTree = "<group>"; };
+		170EB8B0210F5C43001E175E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1762A3F7210B1B470073BC84 /* AugemntedRealWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugemntedRealWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1762A3FA210B1B470073BC84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1762A3FC210B1B470073BC84 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -45,10 +49,10 @@
 		1762A403210B1B4B0073BC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1762A406210B1B4B0073BC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1762A408210B1B4B0073BC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1762A40D210B1B4B0073BC84 /* AugemntedRealWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugemntedRealWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1762A40D210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitDemoPlacing3DObjectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1762A411210B1B4B0073BC84 /* AugemntedRealWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugemntedRealWorldTests.swift; sourceTree = "<group>"; };
 		1762A413210B1B4B0073BC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1762A418210B1B4B0073BC84 /* AugemntedRealWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugemntedRealWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1762A418210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitDemoPlacing3DObjectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1762A41C210B1B4B0073BC84 /* AugemntedRealWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugemntedRealWorldUITests.swift; sourceTree = "<group>"; };
 		1762A41E210B1B4B0073BC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1762A42A210B1BCB0073BC84 /* EarthNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthNode.swift; sourceTree = "<group>"; };
@@ -84,10 +88,12 @@
 		1762A3EE210B1B470073BC84 = {
 			isa = PBXGroup;
 			children = (
+				170EB8B0210F5C43001E175E /* Default-568h@2x.png */,
+				170EB8AE210F5BCD001E175E /* screen.png */,
 				1762A430210BD67D0073BC84 /* README.md */,
-				1762A3F9210B1B470073BC84 /* AugemntedRealWorld */,
-				1762A410210B1B4B0073BC84 /* AugemntedRealWorldTests */,
-				1762A41B210B1B4B0073BC84 /* AugemntedRealWorldUITests */,
+				1762A3F9210B1B470073BC84 /* ARKitDemoPlacing3DObjects */,
+				1762A410210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsTests */,
+				1762A41B210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsUITests */,
 				1762A3F8210B1B470073BC84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,13 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				1762A3F7210B1B470073BC84 /* AugemntedRealWorld.app */,
-				1762A40D210B1B4B0073BC84 /* AugemntedRealWorldTests.xctest */,
-				1762A418210B1B4B0073BC84 /* AugemntedRealWorldUITests.xctest */,
+				1762A40D210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsTests.xctest */,
+				1762A418210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1762A3F9210B1B470073BC84 /* AugemntedRealWorld */ = {
+		1762A3F9210B1B470073BC84 /* ARKitDemoPlacing3DObjects */ = {
 			isa = PBXGroup;
 			children = (
 				1762A3FA210B1B470073BC84 /* AppDelegate.swift */,
@@ -115,33 +121,33 @@
 				1762A405210B1B4B0073BC84 /* LaunchScreen.storyboard */,
 				1762A408210B1B4B0073BC84 /* Info.plist */,
 			);
-			path = AugemntedRealWorld;
+			path = ARKitDemoPlacing3DObjects;
 			sourceTree = "<group>";
 		};
-		1762A410210B1B4B0073BC84 /* AugemntedRealWorldTests */ = {
+		1762A410210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsTests */ = {
 			isa = PBXGroup;
 			children = (
 				1762A411210B1B4B0073BC84 /* AugemntedRealWorldTests.swift */,
 				1762A413210B1B4B0073BC84 /* Info.plist */,
 			);
-			path = AugemntedRealWorldTests;
+			path = ARKitDemoPlacing3DObjectsTests;
 			sourceTree = "<group>";
 		};
-		1762A41B210B1B4B0073BC84 /* AugemntedRealWorldUITests */ = {
+		1762A41B210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsUITests */ = {
 			isa = PBXGroup;
 			children = (
 				1762A41C210B1B4B0073BC84 /* AugemntedRealWorldUITests.swift */,
 				1762A41E210B1B4B0073BC84 /* Info.plist */,
 			);
-			path = AugemntedRealWorldUITests;
+			path = ARKitDemoPlacing3DObjectsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1762A3F6210B1B470073BC84 /* AugemntedRealWorld */ = {
+		1762A3F6210B1B470073BC84 /* ARKitDemoPlacing3DObjects */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1762A421210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "AugemntedRealWorld" */;
+			buildConfigurationList = 1762A421210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "ARKitDemoPlacing3DObjects" */;
 			buildPhases = (
 				1762A3F3210B1B470073BC84 /* Sources */,
 				1762A3F4210B1B470073BC84 /* Frameworks */,
@@ -151,14 +157,14 @@
 			);
 			dependencies = (
 			);
-			name = AugemntedRealWorld;
+			name = ARKitDemoPlacing3DObjects;
 			productName = AugemntedRealWorld;
 			productReference = 1762A3F7210B1B470073BC84 /* AugemntedRealWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1762A40C210B1B4B0073BC84 /* AugemntedRealWorldTests */ = {
+		1762A40C210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1762A424210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "AugemntedRealWorldTests" */;
+			buildConfigurationList = 1762A424210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "ARKitDemoPlacing3DObjectsTests" */;
 			buildPhases = (
 				1762A409210B1B4B0073BC84 /* Sources */,
 				1762A40A210B1B4B0073BC84 /* Frameworks */,
@@ -169,14 +175,14 @@
 			dependencies = (
 				1762A40F210B1B4B0073BC84 /* PBXTargetDependency */,
 			);
-			name = AugemntedRealWorldTests;
+			name = ARKitDemoPlacing3DObjectsTests;
 			productName = AugemntedRealWorldTests;
-			productReference = 1762A40D210B1B4B0073BC84 /* AugemntedRealWorldTests.xctest */;
+			productReference = 1762A40D210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1762A417210B1B4B0073BC84 /* AugemntedRealWorldUITests */ = {
+		1762A417210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1762A427210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "AugemntedRealWorldUITests" */;
+			buildConfigurationList = 1762A427210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "ARKitDemoPlacing3DObjectsUITests" */;
 			buildPhases = (
 				1762A414210B1B4B0073BC84 /* Sources */,
 				1762A415210B1B4B0073BC84 /* Frameworks */,
@@ -187,9 +193,9 @@
 			dependencies = (
 				1762A41A210B1B4B0073BC84 /* PBXTargetDependency */,
 			);
-			name = AugemntedRealWorldUITests;
+			name = ARKitDemoPlacing3DObjectsUITests;
 			productName = AugemntedRealWorldUITests;
-			productReference = 1762A418210B1B4B0073BC84 /* AugemntedRealWorldUITests.xctest */;
+			productReference = 1762A418210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1762A3F2210B1B470073BC84 /* Build configuration list for PBXProject "AugemntedRealWorld" */;
+			buildConfigurationList = 1762A3F2210B1B470073BC84 /* Build configuration list for PBXProject "ARKitDemoPlacing3DObjects" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,9 +234,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1762A3F6210B1B470073BC84 /* AugemntedRealWorld */,
-				1762A40C210B1B4B0073BC84 /* AugemntedRealWorldTests */,
-				1762A417210B1B4B0073BC84 /* AugemntedRealWorldUITests */,
+				1762A3F6210B1B470073BC84 /* ARKitDemoPlacing3DObjects */,
+				1762A40C210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsTests */,
+				1762A417210B1B4B0073BC84 /* ARKitDemoPlacing3DObjectsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,8 +248,10 @@
 			files = (
 				1762A3FD210B1B470073BC84 /* art.scnassets in Resources */,
 				1762A407210B1B4B0073BC84 /* LaunchScreen.storyboard in Resources */,
+				170EB8AF210F5BCD001E175E /* screen.png in Resources */,
 				1762A404210B1B4B0073BC84 /* Assets.xcassets in Resources */,
 				1762A402210B1B470073BC84 /* Main.storyboard in Resources */,
+				170EB8B1210F5C43001E175E /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +304,12 @@
 /* Begin PBXTargetDependency section */
 		1762A40F210B1B4B0073BC84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1762A3F6210B1B470073BC84 /* AugemntedRealWorld */;
+			target = 1762A3F6210B1B470073BC84 /* ARKitDemoPlacing3DObjects */;
 			targetProxy = 1762A40E210B1B4B0073BC84 /* PBXContainerItemProxy */;
 		};
 		1762A41A210B1B4B0073BC84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1762A3F6210B1B470073BC84 /* AugemntedRealWorld */;
+			target = 1762A3F6210B1B470073BC84 /* ARKitDemoPlacing3DObjects */;
 			targetProxy = 1762A419210B1B4B0073BC84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,7 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33YL27GJ5C;
-				INFOPLIST_FILE = AugemntedRealWorld/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARKitDemoPlacing3DObjects/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33YL27GJ5C;
-				INFOPLIST_FILE = AugemntedRealWorld/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARKitDemoPlacing3DObjects/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,7 +501,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AugemntedRealWorld.app/AugemntedRealWorld";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKitDemoPlacing3DObjects.app/ARKitDemoPlacing3DObjects";
 			};
 			name = Debug;
 		};
@@ -514,7 +522,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AugemntedRealWorld.app/AugemntedRealWorld";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARKitDemoPlacing3DObjects.app/ARKitDemoPlacing3DObjects";
 			};
 			name = Release;
 		};
@@ -561,7 +569,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1762A3F2210B1B470073BC84 /* Build configuration list for PBXProject "AugemntedRealWorld" */ = {
+		1762A3F2210B1B470073BC84 /* Build configuration list for PBXProject "ARKitDemoPlacing3DObjects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1762A41F210B1B4B0073BC84 /* Debug */,
@@ -570,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1762A421210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "AugemntedRealWorld" */ = {
+		1762A421210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "ARKitDemoPlacing3DObjects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1762A422210B1B4B0073BC84 /* Debug */,
@@ -579,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1762A424210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "AugemntedRealWorldTests" */ = {
+		1762A424210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "ARKitDemoPlacing3DObjectsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1762A425210B1B4B0073BC84 /* Debug */,
@@ -588,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1762A427210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "AugemntedRealWorldUITests" */ = {
+		1762A427210B1B4B0073BC84 /* Build configuration list for PBXNativeTarget "ARKitDemoPlacing3DObjectsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1762A428210B1B4B0073BC84 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1762A3F6210B1B470073BC84"
-               BuildableName = "AugemntedRealWorld.app"
-               BlueprintName = "AugemntedRealWorld"
-               ReferencedContainer = "container:AugemntedRealWorld.xcodeproj">
+               BuildableName = "ARKitDemoPlacing3DObjects.app"
+               BlueprintName = "ARKitDemoPlacing3DObjects"
+               ReferencedContainer = "container:ARKitDemoPlacing3DObjects.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1762A40C210B1B4B0073BC84"
-               BuildableName = "AugemntedRealWorldTests.xctest"
-               BlueprintName = "AugemntedRealWorldTests"
-               ReferencedContainer = "container:AugemntedRealWorld.xcodeproj">
+               BuildableName = "ARKitDemoPlacing3DObjectsTests.xctest"
+               BlueprintName = "ARKitDemoPlacing3DObjectsTests"
+               ReferencedContainer = "container:ARKitDemoPlacing3DObjects.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1762A417210B1B4B0073BC84"
-               BuildableName = "AugemntedRealWorldUITests.xctest"
-               BlueprintName = "AugemntedRealWorldUITests"
-               ReferencedContainer = "container:AugemntedRealWorld.xcodeproj">
+               BuildableName = "ARKitDemoPlacing3DObjectsUITests.xctest"
+               BlueprintName = "ARKitDemoPlacing3DObjectsUITests"
+               ReferencedContainer = "container:ARKitDemoPlacing3DObjects.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1762A3F6210B1B470073BC84"
-            BuildableName = "AugemntedRealWorld.app"
-            BlueprintName = "AugemntedRealWorld"
-            ReferencedContainer = "container:AugemntedRealWorld.xcodeproj">
+            BuildableName = "ARKitDemoPlacing3DObjects.app"
+            BlueprintName = "ARKitDemoPlacing3DObjects"
+            ReferencedContainer = "container:ARKitDemoPlacing3DObjects.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1762A3F6210B1B470073BC84"
-            BuildableName = "AugemntedRealWorld.app"
-            BlueprintName = "AugemntedRealWorld"
-            ReferencedContainer = "container:AugemntedRealWorld.xcodeproj">
+            BuildableName = "ARKitDemoPlacing3DObjects.app"
+            BlueprintName = "ARKitDemoPlacing3DObjects"
+            ReferencedContainer = "container:ARKitDemoPlacing3DObjects.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1762A3F6210B1B470073BC84"
-            BuildableName = "AugemntedRealWorld.app"
-            BlueprintName = "AugemntedRealWorld"
-            ReferencedContainer = "container:AugemntedRealWorld.xcodeproj">
+            BuildableName = "ARKitDemoPlacing3DObjects.app"
+            BlueprintName = "ARKitDemoPlacing3DObjects"
+            ReferencedContainer = "container:ARKitDemoPlacing3DObjects.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

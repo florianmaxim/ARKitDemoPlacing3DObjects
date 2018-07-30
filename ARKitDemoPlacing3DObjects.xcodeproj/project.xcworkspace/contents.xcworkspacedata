@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AugemntedRealWorld.xcodeproj">
+      location = "self:/Users/florian/ARKitDemoPlacing3DObjects/ARKitDemoPlacing3DObjects.xcodeproj">
    </FileRef>
 </Workspace>
